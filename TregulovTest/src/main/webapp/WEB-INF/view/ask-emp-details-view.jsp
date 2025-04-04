@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 
 <html>
@@ -9,13 +10,21 @@
 <br> <%--тег для перехода на новую строку--%>
 <br>
 
-<form action="showDetails" method="get">
-    <input type="text" name="employeeName" <%--в переменную Name мы сохраняем текст написанный юзером--%>
-           placeholder="Write your name"/> <%--подсказка что нужно вводить в строку--%>
+<form:form action ="showDetails" modelAttribute="employee">
 
-    <input type="submit"/> <%--тип который будет отображать кнопку--%>
+    Name <form:input path="name"/>
+    <br>
+    <br>
+    Surname <form:input path="surname"/>
+    <br>
+    <br>
+    Salary <form:input path="salary"/>
+    <br>
+    <br>
 
-</form>
+    <input type="submit" value="OK"> <%--при нажатии на ОК срабатывают Сеттеры--%>
+
+</form:form>
 
 </body>
 
