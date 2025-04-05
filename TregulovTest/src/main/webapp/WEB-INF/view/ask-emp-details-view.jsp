@@ -46,9 +46,14 @@
 
     Name <form:input path="phoneNumber"/>
     <form:errors path="phoneNumber"/>
+    <br>
+    <br>
 
+    Name <form:input path="email"/>
+    <form:errors path="email"/>
     <br>
     <br>
+
     <input type="submit" value="OK"> <%--при нажатии на ОК срабатывают Сеттеры--%>
 
 </form:form>
