@@ -32,6 +32,15 @@
    Audi <form:radiobutton path="carBrand" value="Audi"/>
    MB <form:radiobutton path="carBrand" value="Mersedes-Benz"/>
 
+    <br>
+    <br>
+    Foreign Language(s)
+<%--    EN <form:checkbox path="languages" value="English"/>--%>
+<%--    DE <form:checkbox path="languages" value="Deutch"/>--%>
+<%--    FR <form:checkbox path="languages" value="Franch"/>--%>
+    
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
+
     <input type="submit" value="OK"> <%--при нажатии на ОК срабатывают Сеттеры--%>
 
 </form:form>
