@@ -7,6 +7,7 @@ public class Employee {
     private String name;
     private String surname;
     private int salary;
+    private String carBrand;
 
 
 
@@ -20,6 +21,15 @@ public class Employee {
         departments.put("TTT","TTT");
         departments.put("AAA","AAA");
     }
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
+
     public Map<String, String> getDepartments() {
         return departments;
     }

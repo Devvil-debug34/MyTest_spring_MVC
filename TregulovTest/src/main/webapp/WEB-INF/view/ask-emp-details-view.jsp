@@ -27,6 +27,10 @@
 </form:select>
     <br>
     <br>
+    Which car do you want?
+   BMW <form:radiobutton path="carBrand" value="BMW"/>
+   Audi <form:radiobutton path="carBrand" value="Audi"/>
+   MB <form:radiobutton path="carBrand" value="Mersedes-Benz"/>
 
     <input type="submit" value="OK"> <%--при нажатии на ОК срабатывают Сеттеры--%>
 
